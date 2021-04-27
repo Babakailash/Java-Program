@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class SnakeLadder 
+public class SnakeLadder
 {	
 	public static final int No_Play=1;
 	public static final int Ladder=2;
@@ -45,7 +45,11 @@ public class SnakeLadder
 				break;
 			
 			case Ladder:
-				position += droll;
+				if ((position + droll) > Win_position){
+					position = Win_position;
+				} else{
+					position += droll;	
+				}
 				System.out.println("Player moves ahead by : "+position);
 				break;
 			
@@ -65,3 +69,4 @@ public class SnakeLadder
 	}
 
 }
+
