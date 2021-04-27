@@ -27,14 +27,11 @@ System.out.println("Enter The value of y3 and y4");
       double c=Math.pow((x4-x3), 2);
       double d=Math.pow((y4-y3), 2);
       Double length_of_line2=Math.sqrt(c+d);
-     //System.out.println("Length Of a line: "+length_of_line2);
 
-   if (length_of_line1.equals(length_of_line2)){
-       System.out.println("Lines are Equal");
-}
-       else {
-             System.out.println("Lines are not Equal");
-}
+
+
+       System.out.println("\n"+"Result\t"+length_of_line1.compareTo(length_of_line2));
+
 
 }
 }
